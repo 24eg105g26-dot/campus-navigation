@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Navigation</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet Map CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎓 Campus Navigation</h1>
+        <p>Find your way around campus</p>
+    </header>
+
+
+    <main>
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h2>🔎 Find a Location</h2>
+
+            <select id="locationSelect">
+                <option value="">
+                    Select a location
+                </option>
+            </select>
+
+            <button id="navigateButton">
+                Navigate
+            </button>
+
+        </section>
+
+
+        <!-- Map Section -->
+        <section class="map-section">
+
+            <h2>🗺️ Campus Map</h2>
+
+            <div id="map"></div>
+
+        </section>
+
+
+        <!-- Locations Section -->
+        <section class="location-section">
+
+            <h2>📍 Campus Locations</h2>
+
+            <div id="locationsContainer">
+                Loading locations...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Campus Navigation System
+        </p>
+
+    </footer>
+
+
+    <!-- Leaflet Map JavaScript -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
